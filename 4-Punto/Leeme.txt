@@ -1,0 +1,4 @@
+En el programa encontramos que tenemos un espacio para ingresar dos numeros.
+Luego de ello el programa evalua los dos numeros por medio del script el cual evalua si el segundo numero es multiplo del primero.
+Al finalizar el calculo emite una alerta danto el resultado.
+Para finalizar tiene un boton para realizar otro calculo.

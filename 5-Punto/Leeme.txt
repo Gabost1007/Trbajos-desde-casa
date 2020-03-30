@@ -1,0 +1,3 @@
+En el programa se encontra un script donde realizamos el calculo de si un año ingresado es biciesto o no.
+El programa evalua por medio de un if si es biciesto o no, al obtener el resultado emite una alerta dando a conocer el resultado.
+Al finalizar tenemos un boton donde podremos realizar un nuevo calculo.

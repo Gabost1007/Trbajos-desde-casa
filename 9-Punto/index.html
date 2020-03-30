@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Envio Mercancias</title>
+</head>
+<body style="background-color:#E8F9F4;">
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center>
+	<a href="index.html" class="btn green">Realizar un nuevo calculo</a>
+	<script>
+		var peso,valor;
+		var tarjeta,lunes;
+		peso = prompt('Ingrese el peso ','');
+		valor = prompt('Ingrese el valor ','');
+		peso=parseInt(peso);
+		valor=parseInt(valor);
+		tarjeta = prompt('Paga con tarjteta s(si) n(no)','');
+		lunes = prompt('Paga el dia lunes s(si) n(no)','');
+		tarjeta=String(tarjeta);
+		lunes=String(lunes);
+		var total;
+
+		if (peso<100) {
+			total='20000';
+		}else if (peso>100 && peso<150) {
+			total='25000';
+		}else if (peso>150 && peso<200) {
+			total='30000';
+		}else if (peso >250) {
+			total='35000';
+		}
+
+		if (total<600000 && total>300000) {
+			total=total*0,1;
+		}else if (total>600000 && total< 1000000) {
+			total = total;
+		}else{
+			total = total;
+		}
+
+		if (tarjeta == 's') {
+			total = total-(total);
+		}else{
+			total=total;
+		}
+
+		document.write('El costo total es de '+total+' mil');
+	</script>
+</body>
+</html>

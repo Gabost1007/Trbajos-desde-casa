@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Factorial</title>
+</head>
+<body style="background-color:#E8F9F4;">
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center>
+	<input type="text" size="5" value="valor" id="stand_alone_input">
+	<input type="button" onclick="alert(factorial(document.getElementById('stand_alone_input').value));" value="Calcular">
+	<script>
+	function factorial(x){
+	    x = parseInt(x, 10);
+	    if (isNaN(x)) return 1;
+	    if (x <= 0) return 1;
+	    if (x > 170) return Infinity;
+	    var y = 1;
+	    for (var i = x; i>0; i--){
+	        y *= i;
+	    }
+	    return y;
+	}
+</script>
+</body>
+</html>

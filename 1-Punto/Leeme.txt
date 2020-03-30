@@ -1,0 +1,4 @@
+El programa emite una alerta para ingresar un numero.
+Entra al script y evalua si el numero ingresado es par o impar.
+Emite una alerta dando a conocer el resultado.
+Para finalizar tiene un boton para realizar nuevos calculos.

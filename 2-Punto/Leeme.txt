@@ -1,0 +1,4 @@
+En el programa se ve un mensaje donde ingresamos dos numeros.
+El programa entra al script y evalua los dos numeros.
+Al tener el numero mayor el programa emite una alerta dando a conocer el resultado.
+Para finalizar tiene un boton para realizar nuevos calculos.

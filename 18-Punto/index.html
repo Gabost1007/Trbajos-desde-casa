@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Serie fibnacci modificada</title>
+</head>
+<body style="background-color:#E8F9F4;">
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center>
+	<div>
+		<input id="num" name="numero" class="form-control" type="number">
+		<button class="btn btn-success" onclick="fibonacci()">Calcular</button>
+	</div>
+	<div class="panel-footer" id="resultado"></div>
+	<div class="panel-footer" id="resultado2"></div>
+	<script>
+		function fibonacci(){
+			var x = 0;
+			var valor = document.getElementById('num').value;
+			var arreglo = [];
+			var i=0;
+			var suma=0;
+			valor = parseInt(valor);
+			for (x; x<valor; x++){
+				if(x==0){
+					arreglo.push(0);
+				}
+				else if(x==1){
+					arreglo.push(1);
+				}
+				else{
+					arreglo.push(arreglo[x-1]+arreglo[x-2]);
+				}
+				for(i; i<valor; i++){
+					suma =suma+x;
+				}
+			}
+			document.getElementById("resultado").innerHTML ="<h3>"+arreglo+"</h3>";
+			document.getElementById("resultado1").innerHTML ="<h3>"+suma+"</h3>";
+		}
+	</script>
+</center>
+</body>
+</html>

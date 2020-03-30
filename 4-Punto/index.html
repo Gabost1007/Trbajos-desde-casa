@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Numero multiplo entre dos numeros</title>
+</head>
+<body style="background-color:#E8F9F4;">
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center>
+	<a href="index.html" class="btn green">Realizar un nuevo calculo</a>
+	<script>
+  		var numero1,numero2;
+  		numero1=prompt('Ingrese primer número:','');
+  		numero2=prompt('Ingrese segundo número:','');
+  		numero1=parseInt(numero1);
+  		numero2=parseInt(numero2);
+		if (numero1%numero2 == 0){
+		    document.write('el numero '+numero2+' es multiplo de '+numero1);
+		  }
+		  else{
+		  	document.write('el numero '+numero2+' no es multiplo de '+numero1);
+		  }
+	</script>
+	</center>
+</body>
+</html>

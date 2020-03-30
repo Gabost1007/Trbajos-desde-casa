@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ordenamiento de tres numeros</title>
+</head>
+<body style="background-color:#E8F9F4;">
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center>
+	<a href="index.html" class="btn green">Realizar un nuevo calculo</a>
+	<script>
+  		var numero1,numero2,numero3;
+  		numero1=prompt('Ingrese primer número:','');
+  		numero2=prompt('Ingrese segundo número:','');
+  		numero3=prompt('Ingrese tercer número:','');
+  		numero1=parseInt(numero1);
+  		numero2=parseInt(numero2);
+  		numero3=parseInt(numero3);
+		if (numero1>numero2 && numero1>numero3){
+			if (numero2>numero3) {
+				document.write('el mayor es el '+numero1+'el numero del medio es '+numero2+' el ultimo numero es '+numero3);
+			}else{
+				document.write('el mayor es el '+numero1+'el numero del medio es '+numero3+' el ultimo numero es '+numero2);
+			}
+		  }
+		  else{
+		    if (numero2>numero3 && numero2>numero1){
+		    	if (numero1>numero3) {
+		    		document.write('el mayor es el '+numero2+' el del medio es '+numero1+' el ultimo numero es '+numero3);
+		    	}else{
+		    		document.write('el mayor es el '+numero2+' el del medio es '+numero3+' el ultimo numero es '+numero1);
+		    	}
+		    }
+		    else{
+		    	if (numero3>numero1 && numero3>numero2) {
+		    		if (numero1>numero2) {
+		    			document.write('el mayor es el '+numero3+'el del medio es '+numero1+' el ultimo es' + numero2);
+		    		}else{
+		    			document.write('el mayor es el '+numero3+'el del medio es '+numero2+' el ultimo es' + numero1);
+		    		}
+		    	}
+		    }
+		}
+	</script>
+	</center>
+</body>
+</html>

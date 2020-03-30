@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Numero Primo</title>
+</head>
+<body style="background-color:#E8F9F4;">
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center>
+	<a href="index.html" class="btn green">Realizar un nuevo calculo</a>
+	<script>
+		var n1 = prompt("Escribe un número");
+		var i;
+		var primer = true;
+		for (i=2; i < n1 / 2; i++) {
+			if (n1 % i === 0) {
+				primer = false;
+			}
+		}
+		if (primer) {
+			document.write("El número es primo");
+		} else {
+			document.write("El número no es primo");
+		}
+	</script>
+</center>
+</body>
+</html>

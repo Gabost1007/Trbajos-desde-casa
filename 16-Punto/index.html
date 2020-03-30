@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ecuaciones cuadraticas</title>
+</head>
+<body style="background-color:#E8F9F4;">
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center>
+	<a href="index.html" class="btn green">Realizar un nuevo calculo</a>
+	<script>
+		var a,b,c,d,x,x1,x2;
+		a=prompt('Ingrese el valor de a','');
+		b=prompt('Ingrese el valor de b','');
+		c=prompt('Ingrese el valor de c','');
+		a=parseInt(a);
+		b=parseInt(b);
+		c=parseInt(c);
+
+		d=b*b-4*a*c;
+		if (d<0) {
+			alert('No tiene solucion');
+		}else if (d == 0) {
+			x=-b/a;
+			alert('la solucion es '+x);
+		}else{
+			x1=(-b+Math.sqrt(d))*2*a;
+			x2=-(-b-Math.sqrt(d))*2*a;
+			alert('Solcuion 1 '+x1+ 'solucion2 '+x2);
+		}
+	</script>
+</center>
+</body>
+</html>

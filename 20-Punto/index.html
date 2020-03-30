@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Numeros primos</title>
+</head>
+<body style="background-color:#E8F9F4;">
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center>
+	<a href="index.html" class="btn green">Realizar un nuevo calculo</a>
+	<script>
+		var m,bandera,t1,s=2,j=0;
+		t1=parseInt(prompt('ingrese final del rango: ',''));
+		for(var x=1; x<=t1;x++){
+			bandera=false;
+			while(!bandera){
+				m=2;
+				bandera=true;
+				while(bandera && m<x){
+					if (s%m==0) {
+						bandera=false;
+					}else{
+						m=m+1;
+					}
+				}
+				if (bandera) {
+					j++;
+					document.write("numero ",j,"es: ",s);
+				}
+			}
+			s++;
+		}
+	</script>
+</center>
+</body>
+</html>

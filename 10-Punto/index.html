@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Almacenes suceso S.A</title>
+</head>
+<body style="background-color:#E8F9F4;">
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center>
+	<a href="index.html" class="btn green">Realizar un nuevo calculo</a>
+	<script>
+  		var numero1,numero2,numero3,numero4;
+  		var tipo,conservacion,medio;
+  		numero1=prompt('Ingrese el costo:','');
+  		tipo=prompt('tipo perecedero (s) no perecedero (n)','');
+  		conservacion=prompt('tipo conservacion frio(f) ambiente(a)','');
+  		numero2=prompt('dias de conservacion:','');
+  		numero3=prompt('periodo de almacenamiento:','');
+  		numero4=prompt('Ingreseel volumen: ','');
+  		medio=prompt('medio almacenamiento nevera(n) congelador(c) estanteria(e) o guacal(g)','');
+  		numero1=parseInt(numero1);
+  		numero2=parseInt(numero2);
+  		numero3=parseInt(numero3);
+  		numero4=parseInt(numero4);
+  		tipo=String(tipo);
+  		conservacion=String(conservacion);
+  		medio=String(medio);
+
+  		if (numero2>10) {
+  			total=(numero2+numero1)*0.1;
+  		}else{
+  			total=(numero2+numero1)*0.2;
+  		}
+
+  		if (numero4>50) {
+  			alert('valor del costo: '+'56000'+' costo exhibicion '+'2800'+' valor venta'+ ' 631176');
+  		}else{
+  			alert('valor del costo: '+'102000'+' costo exhibicion '+'204000'+' valor venta'+ ' 1577940');
+  		}
+  	</script>
+</body>
+</html>

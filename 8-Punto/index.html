@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Valor matricula</title>
+</head>
+<body style="background-color:#E8F9F4;">
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center>
+	<a href="index.html" class="btn green">Realizar un nuevo calculo</a>
+	<script >
+		var Ncredito,valor,estrato;
+		Ncredito = prompt('Ingrerse el numero de creditos ','');
+		valor = prompt('Ingrese el valor de los creditos	 ','');
+		estrato = prompt('Ingrese el estrato ','');
+		Ncredito=parseInt(Ncredito);
+		valor= parseInt(valor);
+		estrato=parseInt(estrato);
+		if (estrato == 1) {
+			document.write('Costo matricula es: '+((valor*Ncredito)*0,8)+' y subsidio: 200000');
+		}else if(estrato == 2){
+			document.write('Costo matricula es: '+((valor*Ncredito)*0,5)+' y subsidio: 100000');
+		}else if(estrato == 3){
+			document.write('Costo matricula es: '+((valor*Ncredito)*0,3));
+		}else{
+			document.write('Costo matricula es: '+(valor*Ncredito)+' mil');
+		}
+	</script>
+</body>
+</html>

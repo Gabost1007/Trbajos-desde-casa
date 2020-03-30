@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Serie numeros, sumatoria y promedio</title>
+</head>
+<body style="background-color:#E8F9F4;">
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center>
+	<a href="index.html" class="btn green">Realizar un nuevo calculo</a>
+	<script>
+		var numero,suma=0,promedio=0;
+		numero=prompt('Ingrese el numero total: ','');
+		numero=parseInt(numero);
+		for(var i=1; i<numero; i++){
+			suma =suma+i;
+			promedio= suma/i;
+			alert('Numeros' + i);
+			alert('sumatoria' +suma);
+			alert('promedio' +promedio);
+		}
+	</script>	
+</body>
+</html>

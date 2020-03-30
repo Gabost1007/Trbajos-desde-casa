@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculo numero 1 and 9</title>
+</head>
+<body style="background-color:#E8F9F4;">
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center>
+	<a href="index.html" class="btn green">Realizar un nuevo calculo</a>
+	<script>
+  		numero=0;
+  		suma=0;
+  		count=0;
+		numero=parseInt(prompt("Ingrese el numero a evaluar"));
+		if(numero<10){
+			alert("Resultado "+numero);
+		}else if(numero%2 == 0){
+			alert("Resultado "+numero);
+		}else{
+			for(var i=0; i<numero;i++){
+				suma=suma*10+1;
+				count=count+suma;
+				alert("Resultado" +count);
+			}
+		}
+	</script>
+	</center>
+</body>
+</html>
